@@ -14,6 +14,11 @@ public class GitHubCicdApplication {
         return "Welcome to GitHub Cicd";
     }
 
+    @GetMapping("/finally")
+    public String finallyWork() {
+        return "finallyWork";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(GitHubCicdApplication.class, args);
     }
